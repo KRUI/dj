@@ -1,4 +1,0 @@
-Getting Good with Django
-========================
-
-So, you've [gone through the tutorial][1], made your first (basic) project (mostly by adapting the functionality discussed in the tutorial to suit your needs)
