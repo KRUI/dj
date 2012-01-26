@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.cfg
+setup.py
+django_email_confirmation.egg-info/PKG-INFO
+django_email_confirmation.egg-info/SOURCES.txt
+django_email_confirmation.egg-info/dependency_links.txt
+django_email_confirmation.egg-info/not-zip-safe
+django_email_confirmation.egg-info/top_level.txt
+docs/index.txt
+emailconfirmation/__init__.py
+emailconfirmation/admin.py
+emailconfirmation/models.py
+emailconfirmation/signals.py
+emailconfirmation/views.py
+emailconfirmation/templates/emailconfirmation/email_confirmation_message.txt
+emailconfirmation/templates/emailconfirmation/email_confirmation_subject.txt

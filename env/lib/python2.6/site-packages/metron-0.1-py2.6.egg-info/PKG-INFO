@@ -1,0 +1,27 @@
+Metadata-Version: 1.0
+Name: metron
+Version: 0.1
+Summary: analytics and metrics integration for Django
+Home-page: http://github.com/eldarion/metron
+Author: Eldarion
+Author-email: developers@eldarion.com
+License: BSD
+Description: ======
+        Metron
+        ======
+        
+        
+        Current analytics services supported:
+        
+        * Google Analytics
+        * Mixpanel
+        * gaug.es
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Framework :: Django
