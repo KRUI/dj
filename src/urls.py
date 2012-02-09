@@ -24,7 +24,6 @@ urlpatterns = patterns("",
     url(r"^notices/", include("notification.urls")),
     url(r"^announcements/", include("announcements.urls")),
     url(r"^playlist/", include("playlist.urls")),
-    url(r"^djide/", include("djide.urls")),
 )
 
 
