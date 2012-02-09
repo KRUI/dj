@@ -1,3 +1,0 @@
-[console_scripts]
-pinax-admin = pinax.core.management:execute_from_command_line
-
