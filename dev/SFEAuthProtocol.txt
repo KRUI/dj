@@ -1,0 +1,8 @@
+/*SFEAuth Database Schema
+	[OBJECTIVE]
+	Documentation of the SQL backend to authentication schema
+	
+	auth_type can be one of two types internal (0) or API (1)
+*/
+uid app_id app_name auth_token auth_ttl auth_type request_token request_time
+

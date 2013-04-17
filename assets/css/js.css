@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* KRUI DJ */
+/*Javascript assets*/
+/*tool tips*/
+.tipsy { letter-spacing: normal; padding: 5px; font-size: 10px; opacity: 0.8; filter: alpha(opacity=80); background-repeat: no-repeat;  background-image: url(../images/tipsy.gif); }
+  .tipsy-inner { padding: 5px 8px 4px 8px; background-color: black; color: white; max-width: 200px; text-align: center; }
+  .tipsy-inner { -moz-border-radius:3px; -webkit-border-radius:3px; }
+  .tipsy-north { background-position: top center; }
+  .tipsy-south { background-position: bottom center; }
+  .tipsy-east { background-position: right center; }
+  .tipsy-west { background-position: left center; }
+  /*autocomplete*/
+  .ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.ac_loading {
+	background: white url(../images/ajax-loader.gif) right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #eee;
+}
+
+.ac_over {
+	background-color: #0A246A;
+	color: white;
+}
+/*slide box*/
+.slide-panel {
+	z-index: 25;
+	width: 5px;
+	position: absolute;
+}
+
+.bottom {
+	bottom: 0;
+}
+
+.right {
+}
+
+.left {
+	position: absolute;
+	left: 0;
+}
+
+.top {
+	top: 0;
+}
+
+.content {
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 10;
+	overflow: hidden;
+	text-align: left;
+	background-color: #343434;
+	height: 0;
+	width: 100%;
+	color: #fff;
+}
+
+.slide-button {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 150px;
+	z-index: 20;
+	cursor: pointer;
+	height: 30px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.slide-button:hover {
+	color: #9f9d8e;
+}
+/*menu*/
+ul#menu, ul#menu ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  width: 15em;
+}
+
+ul#menu a {
+  display: block;
+  text-decoration: none;	
+}
+
+ul#menu li {
+  margin-top: 1px;
+}
+
+ul#menu li a {
+  background: #333;
+  color: #fff;	
+  padding: 0.5em;
+}
+
+ul#menu li a:hover {
+  background: #000;
+}
+
+ul#menu li ul li a {
+  background: #ccc;
+  color: #000;
+  padding-left: 20px;
+}
+
+ul#menu li ul li a:hover {
+  background: #aaa;
+  border-left: 5px #000 solid;
+  padding-left: 15px;
+}

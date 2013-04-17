@@ -1,0 +1,488 @@
+@charset "UTF-8";
+/* KRUI DJ */
+body {
+background-color: #e5e5e5 !important;
+background-image: url(../images/app_bg.png);
+font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+/*font-family:Arial, Helvetica, sans-serif;*/
+font-size:13px;
+overflow:hidden;
+}
+
+h3 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+font-weight: 700;
+letter-spacing: -1px;
+}
+
+strong {
+font-weight: bold;
+}
+#wrapper {
+box-shadow: 0 1px 10px #888;
+-moz-box-shadow: 0 1px 10px #888;
+-webkit-box-shadow: 0 1px 10px #888;
+}
+#main_menu {
+background-color: #000;
+/*background-image:url(../images/app_logo.png);*/
+background-repeat:no-repeat;
+color: #fff;
+height: 0px;
+width: 100%;
+}
+
+#app_logo {
+background-image: url(../images/app_logo.png);
+}
+
+/*Navigation Menu*/
+#nav_menu {
+background: #474747 url('../images/header.png');
+border-top: solid #222 3px;
+border-bottom: solid #666 1px;
+color: #000;
+height: 30px;
+padding-left: 10px;
+padding-top: 7px;
+text-shadow: 0px 1px 1px #555;
+}
+
+#nav_menu li {
+display: inline;
+}
+
+#nav_items {
+margin-top: 3px;
+margin-left: 40px;
+}
+
+.nav_link a {
+color: #e5e5e5;
+font-size: 15px;
+font-weight: 500;
+padding: 5px 6px 7px 7px;
+text-decoration: none;
+}
+
+.nav_link a:hover {
+color: #ccc;
+}
+
+#nav_right {
+color: #222;
+margin-top: -15px;
+padding-right: 15px;
+text-align: right;
+}
+
+#nav_right a {
+color: #e5e5e5;
+font-size: 11px;
+text-decoration: none;
+}
+/*Settings*/
+#settings_header {
+background-color: #06c;
+color: #fff;
+padding: 6px 6px 6px 6px;
+}
+
+#settings {
+font-size: 11px;
+font-weight: bold;
+min-height: 450px;
+min-width: 350px;
+}
+
+#settings a {
+color: #06c;
+}
+
+#settings a:hover {
+color: #09f;
+}
+
+#settings button {
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+background: #f0f0f0 url(../images/button_bg.png) center repeat-x;
+border: 1px solid #e0e0e0;
+border-bottom-color: silver;
+padding: 5px;
+width: 100px;
+}
+
+#settings li {
+padding-top: 6px;
+padding-bottom: 20px;
+}
+
+#settings .text_input {
+font-size: 10px;
+height: 12px;
+width: 200px;
+}
+
+#settings_sub {
+float: right;
+margin-top: 25px;
+}
+
+#settings_sub li {
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+/*Caption*/
+.caption {
+color: #ccc;
+font-size: 10px;
+}
+
+/*User Alert*/
+#alert {
+background-color: #ff9;
+/*background-image: url(../images/bullet_error.png);*/
+background-position: 1%;
+background-repeat: no-repeat;
+border-bottom: 1px solid #ccc;
+height: 15px;
+overflow: hidden;
+padding: 10px;
+padding-left: 30px;
+}
+
+#alert_message {
+color: #333;
+font-style: italic;
+}
+
+/*User*/
+#user_img {
+float: right;
+margin-right: 16px;
+}
+
+#user_info {
+color: #000;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+font-weight: 400;
+letter-spacing: -1px;
+padding-bottom: 4px;
+padding-left: 11px;
+}
+
+/*Application*/
+#app_container {
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+height: 100%;
+width: 100%;
+}
+
+#app_bottom {
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+/*background-image:url(../images/div_bottom.png);*/
+background-position:bottom;
+background-repeat: repeat-x;
+height: 100%;
+width: 100%;
+}
+
+#app {
+background-color: #fff;
+height: 100%;
+width: 100%;
+overflow: hidden;
+}
+
+#playlist_header {
+background-image: url(../images/add.png);
+background-repeat: no-repeat;
+padding-bottom: 8px;
+padding-left: 20px;
+}
+
+#playlist_weather {
+background-image: url(../images/weather_cloudy.png);
+background-repeat: no-repeat;
+margin-left: 10px;
+padding-bottom: 2px;
+padding-left: 20px;
+}
+
+#playlist_weather a {
+color: #000;
+}
+
+#playlist_weather a:hover {
+color: #c00;
+}
+
+/*Application Text*/
+#app_content {
+display: none;
+padding-left: 20px;
+padding-top: 25px;
+}
+
+/* Submit button */
+/*#app_content button {
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+background: #f0f0f0 url(../images/button_bg.png) center repeat-x;
+border: 1px solid #e0e0e0;
+border-bottom-color: silver;
+padding: 5px;
+width: 100px;
+}
+*/
+
+.app_top {
+font-size: 11px;
+margin-left: 10px;
+padding-bottom: 10px;
+}
+
+.app_top form {
+font-size: 12px;
+}
+
+.text_input {
+font-size: 12px;
+height: 20px;
+margin-bottom: 4px;
+margin-top: 4px;
+width: 200px;
+}
+
+.placeholder {
+color: #999;
+}
+
+/****
+Begin page specific styles here:
+****Playlist***
+*/
+#playlist_view {
+background-color: #f0f0f0;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+#playlist_view .ui-state-active {
+background-color: #f0f0f0;
+}
+
+.playlist_view_content {
+border-style: none !important;
+}
+
+.recent_artist,.recent_album,.recent_song {
+font-size: 11px;
+font-weight:500;
+margin-bottom: 3px;
+overflow:hidden;
+text-shadow: 0px 1px 0px #fff;
+}
+
+.app_middle {
+background-color: #f0f0f0;
+background-position: top;
+background-repeat: repeat-x;
+font-size: 11px;
+font-weight: 700;
+min-height: 334px;
+margin-left: -20px;
+padding-left: 30px;
+padding-top: 10px;
+padding-bottom: 2px;
+width: 100%;
+box-shadow: 0 1px 10px #888;
+-moz-box-shadow: 0 1px 10px #888;
+-webkit-box-shadow: 0 1px 10px #888;
+}
+
+.app_middle li {
+color: #555;
+display: inline-block;
+padding-left: 4px;
+width: 200px;
+}
+
+#li_album {
+border-left: 1px solid #ccc;
+border-right: 1px solid #ccc;
+padding-right: 5px;
+}
+
+/*Weather*/
+/*#weather_header {
+background-color: #06c;
+color: #fff;
+margin-bottom: 3px;
+padding: 6px 6px 6px 6px;*/
+}
+
+/*#weather {
+min-height: 200px;
+min-width: 450px;
+}
+*/
+
+#weather_container {
+list-style: none;
+}
+
+#weather_outlook li {
+display: inline-block;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+/*Chat*/
+#chat_wrapper {
+background-image: url(../images/header.png);
+background-repeat: repeat-x;
+border-left: 1px solid #222;
+border-right: 1px solid #222;
+border-top: 1px solid #222;
+bottom: 0;
+float: right;
+padding-top: 0px;
+position: fixed;
+right: 10px;
+width: 240px;
+}
+
+#chat_title {
+/*background-image: url(../images/comments.png);*/
+background-position: 0 -1px;
+background-repeat: no-repeat;
+}
+
+#chat_title,#chat_title a {
+color: #e5e5e5;
+font-size: 11px;
+font-variant: small-caps;
+font-weight: 700;
+margin-left: 8px;
+padding-bottom: 5px;
+padding-left: 0px;
+text-decoration: none;
+width: 100%;
+}
+
+#chat_title a {
+margin-left:5px;
+}
+
+#chat_container {
+background-color: #fff;
+display: none;
+padding: 1px;
+}
+
+#chat_box {
+height: 200px;
+overflow: auto;
+}
+
+.msgln {
+font-size: 11px;
+overflow: hidden;
+padding-top: 2px;
+padding-bottom: 2px;
+}
+.msgln_time {
+color: #999;
+float: right;
+font-size: 9px;
+text-transform: lowercase;
+}
+
+#user_message {
+margin-left: 1px;
+width: 230px;
+}
+
+/* chat button */
+#chat_bottom button {
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+background: #f0f0f0 url(../images/button_bg.png) center repeat-x;
+border: 1px solid #e0e0e0;
+border-bottom-color: silver;
+padding: 4px;
+width: 80px;
+}
+
+#podcast_header {
+background-image: url(../images/feed_add.png);
+background-repeat: no-repeat;
+padding-bottom: 2px;
+padding-left: 20px;
+}
+
+#podcast {
+list-style: none;
+margin-left: 10px;
+margin-right: 20px;
+padding: 1px 2px 3px 1px;
+}
+
+#podcast_episode {
+height: 325px;
+}
+
+#podcast_episode a {
+color: #06c;
+}
+
+#podcast_episode a:hover {
+color: #09f;
+}
+
+#podcast_episode_header {
+color: #000;
+background-image: url(../images/add.png);
+background-repeat: no-repeat;
+margin-bottom: 5px;
+margin-top: 5px;
+padding-left: 20px;
+}
+
+#nav_right a:hover,#chat_title a:hover {
+color: #ccc;
+}
+
+/*#app_content button:hover,*/
+#chat_bottom button:hover,#settings button:hover {
+border-bottom-color: #a0a0a0;
+}
+
+/*#app_content button:active,*/
+#chat_bottom button:active,#settings button:active {
+background-image: none;
+border-color: #a0a0a0 silver silver;
+}
+
+.app_top li,#weather_container li,#podcast li {
+display: inline-block;
+}
+
+#weather_current,#weather_outlook {
+display: none;
+}
+
+#pc_desc,#pe_desc {
+width: 304px;
+}
+
+#pe_file {
+margin-left: 105px;
+}

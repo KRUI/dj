@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* KRUI DJ - Management */
+body {
+background-color:#e5e5e5 !important;
+background-image:url(../images/app_bg.png);
+font-family:'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+/*font-family:Arial, Helvetica, sans-serif;*/
+font-size:13px;
+}
+
+h1 {	
+font-size:20px;
+font-weight:700;
+}
+
+h3 {
+color:#000;
+font-family:Arial, Helvetica, sans-serif;
+font-size:15px;
+font-weight:700;
+letter-spacing:-1px;
+}
+
+strong {
+font-weight:bold;
+}
+
+em {
+font-style:italic;
+}
+
+.placeholder {
+color:#999;
+}
+
+/*Navigation Menu*/
+#nav_menu {
+background-image:url(../images/nav_bg.png);
+background-repeat:repeat-x;
+height:33px;
+padding-top:7px;
+width:100%;
+}
+
+#nav_menu li {
+display:inline;	
+}
+
+#nav_items {
+margin-left:40px;
+}
+
+.nav_link a {
+color:#e5e5e5;
+font-variant:small-caps;
+font-weight:700;
+padding:5px 6px 7px 7px;
+text-decoration:none;
+}
+
+.nav_link a:hover {
+background-image:url(../images/nav_bg.hover.png);
+background-repeat:repeat-x;
+color:#ccc;
+}
+
+#nav_right {
+margin-top:-15px;
+padding-right:15px;
+text-align:right;
+}
+
+#nav_right a {
+color:#e5e5e5;
+font-size:11px;
+text-decoration:none;
+}
+
+/*Application*/
+.text_input {
+font-family:'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+font-size:10px;
+}
+
+#content_container {
+background-image:url(../images/div_bottom.png);
+background-position:bottom;
+background-repeat:repeat-x;
+min-height:600px;
+margin: 0px auto 0px;
+margin-top:-10px;
+}
+
+#content {
+background:#f0f0f0;
+font-family:Arial, Helvetica, sans-serif;
+min-height:575px;
+padding-left:20px;
+padding-top:20px;
+}
+
+#content h1 {
+text-shadow: #fff 0px 1px 2px;
+}
+
+#content_view {
+background-color:#f0f0f0;
+}
+
+#content_view .ui-state-active {
+background-color:#f0f0f0;
+}
+
+.content_view_content {
+border-style:none !important;
+}
+
+#app_overview, #users_create {
+width:90%;
+}
+
+#app_settings {
+cursor:pointer;
+font-weight:700;
+width:600px;
+}
+
+#app_settings input {
+float:right;
+width:350px;
+}
+
+.app_settings_item {
+padding-bottom:15px;
+}
+
+/*Users*/
+#users_create .text_input {
+font-size:12px;
+height:20px;
+margin-bottom:4px;
+margin-top:4px;
+width:145px;
+}
+
+#users_create li {
+display:inline;
+}
+
+#users_summary {
+width:840px;    
+}
+
+#users_summary_header {
+border:1px solid #ccc;
+padding-top:5px;
+padding-bottom:5px;
+}
+
+#users_summary_header li {
+border-left:1px solid #ccc;
+display:inline;
+}
+
+#users_summary_name {
+border-left:none!important;
+padding-left:100px;
+padding-right:100px;
+}
+
+#users_summary_email {
+padding-left:100px;
+padding-right:100px;
+}
+
+#users_summary_status {
+padding-left:50px;
+padding-right:50px;
+}
+
+#users_summary_activity {
+float:right;
+padding-left:50px;
+padding-right:50px;
+}
+
+#users_list {
+border-bottom:1px solid #ccc;
+border-left:1px solid #ccc;
+border-right:1px solid #ccc;
+padding-top:5px;
+padding-bottom:5px;
+}
+
+#users_list li {
+display:inline-block;
+overflow:hidden;
+}
+
+#users_list p {
+padding:3px 3px 3px 10px;
+}
+
+.users_list_name p {
+border-right:1px solid #ccc;
+width:224px;
+}
+
+.users_list_email p {
+border-right:1px solid #ccc;
+width:219px;
+}
+
+.users_list_status p {
+border-right:1px solid #ccc;
+width:167px;
+}
