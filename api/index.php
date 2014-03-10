@@ -63,10 +63,11 @@ switch ($api['request']['base']) {
 				switch ($api['request']['format']) {
 					case 'json':
 						header("Content-Type: application/json");
+						header("Access-Control-Allow-Origin: *");
 						header("Cache-Control: no-store");
 						$json = '{';
 						$json .= '"song":{"name":"'.stripslashes(htmlentities($item['song_name'])).'","artist":"'.stripslashes(htmlentities($item['song_artist'])).'","album":"'.stripslashes(htmlentities($item['song_album'])).'","request":"'.$item['request_value'].'","time":"'.gmdate('Y-m-d\TH:i:s\Z',$item['created_at']).'"},';
-						$json .= '"user":{"firstname":"'.$item['user']['firstname'].'","lastname":"'.$item['user']['lastname'].'","url":"'.$item['user']['profile_url'].'","bio":"'.$item['user']['profile_bio'].'","twitter":"'.$item['user']['profile_twitter'].'","image":"'.$item['user']['image'].'"}';
+						$json .= '"user":{"firstname":"'.$item['user']['firstname'].'","lastname":"'.$item['user']['lastname'].'","url":"'.$item['user']['profile_url'].'","twitter":"'.$item['user']['profile_twitter'].'","image":"'.$item['user']['image'].'"}';
 						$json .= '}';
 						if (isset($api['request']['callback'])) {
 						    echo ($api['request']['callback'].'('.$json.');');
@@ -98,6 +99,7 @@ switch ($api['request']['base']) {
 				switch ($api['request']['format']) {
 					case 'json':
 						header("Content-Type: application/json");
+						header("Access-Control-Allow-Origin: *");
 						header("Cache-Control: no-store");
 						$json = '[';
 						$result = 0;
@@ -116,7 +118,7 @@ switch ($api['request']['base']) {
 							else {$item[$result]['user']['image'] = 'http://'.$_SERVER['SERVER_NAME'].'/assets/images/default.png';}
 							$json .= '[{';
 							$json .= '"song":{"name":'.$item[$result]['song_name'].',"artist":'.$item[$result]['song_artist'].',"album":'.$item[$result]['song_album'].',"request":"'.$item[$result]['request_value'].'","time":"'.gmdate('Y-m-d\TH:i:s\Z',$item[$result]['created_at']).'"},';
-							$json .= '"user":{"firstname":'.json_encode($item[$result]['user']['firstname']).',"lastname":'.json_encode($item[$result]['user']['lastname']).',"url":"'.$item[$result]['user']['profile_url'].'","bio":'.json_encode(stripslashes($item[$result]['user']['profile_bio'])).',"twitter":"'.$item[$result]['user']['profile_twitter'].'","image":"'.$item[$result]['user']['image'].'"}';
+							$json .= '"user":{"firstname":'.json_encode($item[$result]['user']['firstname']).',"lastname":'.json_encode($item[$result]['user']['lastname']).',"url":"'.$item[$result]['user']['profile_url'].'","twitter":"'.$item[$result]['user']['profile_twitter'].'","image":"'.$item[$result]['user']['image'].'"}';
 							$json .= '}]';
 							if ($result < mysql_num_rows($itemQuery) - 1){
 								$json .= ',';
